@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasob Internship Assessment</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <form id="form">
+        <div class="instruction">
+            <h2>Velvety Wine Questionnaire Form</h2>
+            <p>Please answer all questions</p>
+
+        </div>
+        <div class="form">
+
+    <!-- RADIO BUTTONS -->
+     <div class="container">
+        <label for="Gender">
+        <p>1. What year was Velvety wine initially launched</p>
+    <small>*Answer is Required</small>
+
+           <div class="input">
+            <input type="radio" name="date" value="1988" required> 1988
+            <br>
+        </div>
+        <div class="input">
+            <input type="radio" name="date" value="1987"required  > 1987
+            <br>
+        </div>
+        <div class="input">
+        <input type="radio" name="date" value="1990"required > 1990
+        </div>
+        <div class="input">
+        <input type="radio" name="date" value="1986" required > 1986
+        </div>
+        
+    </label>
+    </div> 
+
+    
+    <!-- DROPDOWN MENUS -->
+    <div class="container">
+        <label for="politics"> </label>
+    <p>2. Where is the manufacturing company of Velvety Located?</p>
+    <small>*Answer is Required</small>
+
+        <div class="dropdown">
+            <select id="select">
+                    <option value=" " disabled="disabled">Please select</option>
+                    <option value="Lagos" >Lagos</option>
+                    <option value="Port-Harcourt"> Port-Harcourt</option>
+                <option value="Abuja">Abuja</option>
+                <option value="Calabar"> Calabar</option>
+            </select>
+        </div>
+
+    </div> 
+    <!-- CHECK-BOXES -->
+<div class="container" >
+    <label for="apply">
+    <p>3. What type of wine do you like? - Multiple choice</p>
+    <small>*Answer is Required</small>
+<br>
+<br>
+        <div class="checboxes required">
+            <input type="checkbox" name="wine" value="Red"> Red 
+            <br>
+            <input type="checkbox" name="wine" value="White" > White
+                     <br>
+            <input type="checkbox" name="wine" value="Sparkling" > Sparkling 
+            <br>
+            <input type="checkbox" name="wine" value="N/A" > N/A
+            <br>
+        </div>
+</label>
+
+</div> 
+ 
+    
+
+    <!-- TEXT AREA -->
+      <div class="container">
+        <label for="msg"></label>
+        <p>4. Leave a Comment to help improve Velvety</p>
+    <small>*Answer is Required</small>
+
+        <input type="text" name="user_text" placeholder="Enter comment here..." id="textarea" required= "required">
+
+    </div> 
+
+    <button type="button" class="btn" id="btn">Submit</button >
+</div>
+
+</form> 
+
+
+<div class="message" id="message">
+    <div class="success">
+        <button type="button" class="closebtn">X</button>
+        <h2>Congratulations,</h2>
+         <h2>You have Successfully Submitted the Velvety Questionnaire Form </h2>
+         <p>click the cancel button to see your selected answers</p>
+    </div>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
